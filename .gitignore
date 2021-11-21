@@ -1,5 +1,5 @@
 # dependencies
-node_modules/
+node_modules
 
 # sensitive data
 keys/
@@ -9,3 +9,11 @@ keys/
 .env.local
 .env.development
 .env.productions
+
+coverage
+coverage.json
+typechain
+
+#Hardhat files
+cache
+artifacts
