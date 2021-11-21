@@ -1,0 +1,11 @@
+# dependencies
+node_modules/
+
+# sensitive data
+keys/
+
+# env
+.env
+.env.local
+.env.development
+.env.productions
