@@ -1,5 +1,7 @@
-function main() {
-  console.log("Everything is up and running");
+import GasBurner from "./gas-burner"
+
+async function main() {
+  await GasBurner()
 }
 
-main();
+main()

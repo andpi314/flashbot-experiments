@@ -25,7 +25,8 @@
     }
   },
   "dependencies": {
-    "@types/node": "^16.4.13",
+    "@flashbots/ethers-provider-bundle": "^0.4.2",
+    "@types/node": "^16.11.9",
     "typescript": "^4.3.5"
   },
   "devDependencies": {
