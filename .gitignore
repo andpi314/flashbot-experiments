@@ -17,3 +17,6 @@ typechain
 #Hardhat files
 cache
 artifacts
+
+#VS Code
+.vscode
