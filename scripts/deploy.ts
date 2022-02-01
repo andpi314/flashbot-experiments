@@ -15,8 +15,8 @@ async function main() {
   console.log(`Account balance: ${balance}`)
 
   // We get the contract to deploy
-  const GasBurner = await ethers.getContractFactory("GasBurner")
-  const smartContract = await GasBurner.deploy()
+  const Contract = await ethers.getContractFactory("MinERC721")
+  const smartContract = await Contract.deploy("NFT", "tNFT")
 
   await smartContract.deployed()
 

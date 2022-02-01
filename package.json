@@ -8,9 +8,11 @@
   "scripts": {
     "build": "tsc",
     "start": "node ./bin/index.js",
+    "hardhat-node:start": "npx hardhat node",
     "start:dev": "ts-node ./src/index.ts",
     "deploy:contracts": "npx hardhat run scripts/deploy.ts",
     "deploy:contracts:goerli": "npx hardhat run scripts/deploy.ts --network goerli",
+    "deploy:contracts:local": "npx hardhat run scripts/deploy.ts --network localhost",
     "compile:contracts": "npx hardhat compile",
     "test:contracts": "npx hardhat test",
     "lint": "yarn lint:sol && yarn lint:ts && yarn prettier:check",
