@@ -39,3 +39,11 @@ A smart contract to mint a fake NFT at price of 0.0004 ETH.
 ### Level 2: Deploy the smart contract
 
 Achievement: get the url of the deployed smart contract on Goerli.
+
+First contract (MinERC721) deployed to [0x0CC8C4f76CdEe1e9A40FdbE4aB8a1C1b0BF0da2A](https://goerli.etherscan.io/address/0x0CC8C4f76CdEe1e9A40FdbE4aB8a1C1b0BF0da2A)
+
+Second contract (ArtMinter) deployed to [0x85F9aB2b46E71005fFeE0E623cd7Cc5512370536](https://goerli.etherscan.io/address/0x85F9aB2b46E71005fFeE0E623cd7Cc5512370536)
+
+### Conclusions
+
+All the smart contracts are deployed on Goerli. We made few mistakes believing that the transactions for calling them weren't working properly but it was just an error. The only thing left, but it has lower than 0 significance is to properly verify the contract code. Keeping that for later.

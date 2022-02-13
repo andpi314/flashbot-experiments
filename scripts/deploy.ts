@@ -17,6 +17,7 @@ async function main() {
   const contracts = [
     {
       name: "MinERC721",
+      constructorArgs: [], // Put constructor args (if any) here for your contract factory.deploy(...constructorArgs);
       deploy: async (contract: any) => contract.deploy("NFT", "tNFT"),
     },
     {

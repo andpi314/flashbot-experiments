@@ -48,3 +48,7 @@ await box.mint({ value: 4000000000000000 })
 }
  **/
 ```
+
+## Handling errors
+
+`REPLACEMENT_UNDERPRICED` Encountered while deploying multiple smart contracts with the same script (forEach array and promises). By doing a simple deployment we were able to deploy it.
