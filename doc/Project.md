@@ -30,8 +30,12 @@ Level passed: Transaction successfully executed on chain [0x9f37f787b987c9cb8e91
 
 ## Experiment 2: Buy & Sell NFT on a single block without price exposure
 
-This experiment aim to build a Flashbot searcher (i.e. Bot) to mint NFTs
+This experiment aim to build a Flashbot searcher (i.e. Bot) to mint NFTs and then buy and sell them on a single block.
 
 ### Level 1: Create the smart contract
 
 A smart contract to mint a fake NFT at price of 0.0004 ETH.
+
+### Level 2: Deploy the smart contract
+
+Achievement: get the url of the deployed smart contract on Goerli.

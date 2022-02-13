@@ -14,13 +14,29 @@ async function main() {
 
   console.log(`Account balance: ${balance}`)
 
-  // We get the contract to deploy
-  const Contract = await ethers.getContractFactory("MinERC721")
-  const smartContract = await Contract.deploy("NFT", "tNFT")
+  const contracts = [
+    {
+      name: "MinERC721",
+      deploy: async (contract: any) => contract.deploy("NFT", "tNFT"),
+    },
+    {
+      name: "ArtMinter",
+      deploy: async (contract: any) => contract.deploy(),
+    },
+  ]
 
-  await smartContract.deployed()
+  const deploymentPromises = contracts.map(async (contractData) => {
+    console.log(`Deploying ${contractData.name}`)
+    const thisContract = await ethers.getContractFactory(contractData.name)
+    const smartContract = await contractData.deploy(thisContract)
+    return await smartContract.deployed()
+  })
 
-  console.log(`SmartContract deployed to ${smartContract.address}`)
+  const deployments = await Promise.all(deploymentPromises)
+
+  deployments.forEach((d) => {
+    console.log(`SmartContract deployed to ${d.address}`)
+  })
 }
 
 // We recommend this pattern to be able to use async/await everywhere

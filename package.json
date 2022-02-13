@@ -9,6 +9,7 @@
     "build": "tsc",
     "start": "node ./bin/index.js",
     "hardhat-node:start": "npx hardhat node",
+    "hardhat-node:console": "npx hardhat console --network localhost",
     "start:dev": "ts-node ./src/index.ts",
     "deploy:contracts": "npx hardhat run scripts/deploy.ts",
     "deploy:contracts:goerli": "npx hardhat run scripts/deploy.ts --network goerli",
